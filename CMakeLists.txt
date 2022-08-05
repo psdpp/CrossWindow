@@ -113,8 +113,7 @@ foreach(source IN LISTS FILE_SOURCES)
 endforeach()
 
 # Main files
-file(GLOB_RECURSE MAIN_SOURCES RELATIVE
-    ${CMAKE_HOME_DIRECTORY}
+file(GLOB_RECURSE MAIN_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/CrossWindow/Main/${XWIN_API_PATH}Main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/CrossWindow/Main/${XWIN_API_PATH}Main.mm
 )
